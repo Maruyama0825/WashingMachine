@@ -11,15 +11,29 @@ public class MenuActivity  extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.menu);
-        Button btn1= (Button)findViewById(R.id.button1);
-        btn1.setOnClickListener(new View.OnClickListener() {
+        Button MyInformation= (Button)findViewById(R.id.button3);
+        MyInformation.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(),
-                        ChoiceActivity.class);
+                        MyInformation.class);
                 startActivity(intent);
             }
         });
+
+        Button NoticeWhole= (Button)findViewById(R.id.button4);
+        NoticeWhole.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(),
+                       LookNoticeWhole.class);
+                startActivity(intent);
+            }
+        });
+
+
+
+
 
     }
 

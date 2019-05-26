@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                                             android:layout_width="match_parent"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
                                              android:layout_height="match_parent">
 
 
@@ -21,8 +21,8 @@
             <ImageView
                     android:layout_width="100dp"
                     android:layout_height="100dp"
-                    android:src="@drawable/washing_machineicon1"
-            />
+                    android:src="@drawable/logo"
+                    />
 
 
 
@@ -36,12 +36,12 @@
 
             <TextView
                     android:layout_width="wrap_content"
-                      android:layout_height="wrap_content"
-                      android:text="당신의 세탁 편의 어플"
-                      android:textStyle="bold"
-                      android:textSize="15dp"
+                    android:layout_height="wrap_content"
+                    android:text="당신의 세탁 편의 어플"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
                     android:textColor="#ffffff"
-            />
+                    android:layout_marginTop="5dp"/>
 
 
         </LinearLayout>
@@ -89,10 +89,9 @@
                 android:textSize="20dp"
                 android:textColorHint="#000000"
                 android:textColor="#000000"
-                android:drawableStart="@drawable/ic_lock_black_24dp"
                 android:textStyle="bold"
                 android:background="#ffffff"
-        >
+                android:drawableStart="@drawable/ic_https_black_24dp">
 
         </EditText>
 
@@ -115,7 +114,7 @@
                     android:layout_gravity="right"
                     android:text="로그인"
                     android:textStyle="bold"
-                    android:textSize="20dp"
+                    android:textSize="25dp"
                     android:textColor="#ffffff"
                     android:layout_marginTop="10dp"
                     android:id="@+id/loginbutton"
@@ -140,6 +139,7 @@
                        android:text="회원가입"
                        android:textSize="25dp"
                        android:textStyle="bold"
+                        android:id="@+id/registerButton"
                />
 
 
